@@ -135,58 +135,117 @@ header .head_right a i:hover{
 .sub_list:hover{
     background-color: #8c92a073;
 }
-/*       Section 1                */
-.sec_1{
+
+/*             Section About          */
+.about p{
+    height: 59px;
+    padding-left: 6%;
+    background-color: #F8F9FA;
+    line-height: 59px;
+}
+.about p a{
+    color: #7971ea;
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+.about p a:hover{
+    color: #3a2ee0;
+}
+/*             Section 1ab          */
+.sec_1ab{
     width: 100%;
-    min-height: 600px;
-    height: calc(100vh - 189px);
-    background-color: #A6F3EC;
+    height: calc(100% - 59px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 0 auto;
+    border-bottom: 1px solid #8c92a07a;
+}
+.sec_1ab img{
+    width: 45%;
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+.sec_1ab .text_ab{
+    width: 35%;
+    margin-top: 70px;
+    margin-bottom: 120px;
+    position: relative;
+}
+.sec_1ab .text_ab::after{
+    content: '';
+    width: 45px;
+    border-top: 2px solid #5a50e5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sec_1ab .text_ab h3{
+    font-size: 32px;
+    font-weight: 400;
+}
+.sec_1ab .text_ab p{
+    font-size: 16px;
+    color: #8c92a0;
+    margin-bottom: 30px;
+}
+/*             Section 2tem          */
+.sec_2tem{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #8c92a07a;
+}
+.sec_2tem .team{
     display: flex;
     justify-content: center;
+}
+.sec_2tem h3{
+    font-size: 32px;
+    font-weight: 500;
+    color: #25262a;
+    position: relative;
+}
+.sec_2tem h3::after{
+    content: '';
+    width: 45px;
+    border-top: 2px solid #5a50e5;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.sec_2tem .team .card{
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-.sec_1 .left{
-    width: 45%;
-    height: 80%;
+.sec_2tem .team .card img{
+    width: 50%;
+    border-radius: 50%;
 }
-.sec_1 .left img{
-    width: 100%;
-    height: 100%;
+.sec_2tem .team .card h4{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
 }
-.sec_1 .right{
-    width: 35%;
-    margin-left: 30px;
-}
-.sec_1 .p_1{
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: capitalize;
-    line-height: 55px;
-}
-.sec_1 .p_2{
-    width: 65%;
-    font-size: 20px;
-    line-height: 35px;
-    font-weight: 300;
-    padding: 20px 0;
-    margin-bottom: 15px;
-}
-.sec_1 a{
+.sec_2tem .team .card span{
     display: block;
-    width: fit-content;
-    padding: 10px 20px;
-    background-color: #7971ea;
-    color: white;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border-radius: 10px;
-    transition: 0.3s linear;
+    color: #b3b3b3;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
 }
-.sec_1 a:hover{
-    background-color: #5a50e5;
-    box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 20px -7px;
-    transform: translateY(-5px);
+.sec_2tem .team .card p{
+    font-size: 16px;
+    color: #8c92a0;
+    text-align: center;
 }
 
 /*       Section 2                */
@@ -194,7 +253,6 @@ header .head_right a i:hover{
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 0;
     border-bottom: 1px solid #8c92a07a;
 }
 .sec_2 .left,
@@ -221,220 +279,9 @@ header .head_right a i:hover{
     letter-spacing: 0.8px;
 }
 .sec_2 .p_2{
-    font-size: 14px;
+    font-size: 16px;
     color: #8c92a0;
 }
-
-/*       Section 3                */
-
-.sec_3{
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-.sec_3 .image_sec_3{
-    width: 25%;
-    height: 80%;
-    position: relative;
-    margin-right: 30px;
-    overflow: hidden;
-}
-.sec_3 .image_sec_3 .empty{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 10%,rgba(255, 255, 255, 0.205) 60%,rgba(255,255,255,0) 100%);
-    z-index: 3;
-    cursor: pointer;
-}
-.image_sec_3:hover img{
-    transform: scale(1.1);
-}
-.sec_3 .image_sec_3 img{
-    width: 100%;
-    min-height: 100%;
-    position: relative;
-    transition: 0.5s ease;
-    z-index: 1;
-}
-
-.sec_3 .image_sec_3 p{
-    padding: 0;     
-    position: absolute;
-    width: fit-content;
-    bottom: 0px;
-    left: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    z-index: 3;
-    letter-spacing: 1px;
-}
-.sec_3 .image_sec_3 p span{
-    font-size: 40px;
-    font-weight: 400;
-    text-transform: capitalize;
-}
-/*       Section 4                */
-.sec_4{
-    background-color: #F8F9FA;
-    width: 100%;
-    /* height: 75vh; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sec_4 .text{
-    position: relative;
-    margin: 60px auto 60px;
-}
-.sec_4 .text::after{
-    content: '';
-    width: 45px;
-    border-top: 2px solid #5a50e5;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-.sec_4 .text p{
-    font-size: 32px;
-}
-.sec_4 .image_sec_4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sec_4 .image_sec_4 .card_sec_4{
-    background-color: white;
-    width: 25%;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sec_4 .image_sec_4 .card_sec_4 img{
-    width: 100%;
-}
-.sec_4 .card_sec_4 .title{
-    width: 100%;
-    margin: 30px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sec_4 .card_sec_4 .title a{
-    font-size: 20px;
-    color: #7971ea;
-    transition: 0.3s linear;
-}
-.sec_4 .card_sec_4 .title a:hover{
-    color: #3a2ee0;
-}
-.sec_4 .card_sec_4 .title p{
-    color: #8c92a0;
-    font-size: 16px;
-}
-.sec_4 .card_sec_4 .title span{
-    color: #7971ea;
-    font-size: 16px;
-    font-weight: 800;
-}
-.sec_4 .arrow{
-    font-size: 25px;
-    margin: 20px 15px 50px 15px;
-}
-.sec_4 .arrow i{
-    padding: 0 15px 0 15px;
-}
-
-/*       Section 5                */
-.sec_5{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid #8c92a07a;
-}
-.sec_5 .text{
-    position: relative;
-    margin: 60px auto 60px;
-}
-.sec_5 .text::after{
-    content: '';
-    width: 45px;
-    border-top: 2px solid #5a50e5;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-.sec_5 .text p{
-    font-size: 32px;
-    color: #25262a;
-    padding-top: 20px;
-}
-.sec_5 .middle{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 130px;
-}
-.sec_5 .middle img{
-    width: 45%;
-    border-radius: 5px;
-}
-.sec_5 .middle .sec5_right{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.sec_5 .middle .sec5_right h2 a{
-    font-size: 32px;
-    color: #7971ea;
-    transition: 0.3s linear;
-}
-.sec_5 .middle .sec5_right h2 a:hover{
-    color: #3a2ee0;
-}
-.sec_5 .sec5_right span{
-    color: #c4c7ce;
-    margin-bottom: 30px;
-}
-.sec_5 .sec5_right span a{
-    color: #7971ea;
-}
-.sec_5 .sec5_right span a:hover{
-    color: #3a2ee0;
-}
-.sec_5 .sec5_right p{
-    width: 80%;
-    text-align: center;
-    color: #8c92a0;
-    margin-bottom: 20px;
-}
-.sec_5 .sec5_right .shop{
-    display: block;
-    width: fit-content;
-    padding: 10px 20px;
-    background-color: #7971ea;
-    color: white;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border-radius: 10px;
-    transition: 0.3s linear;
-}
-.sec_5 .sec5_right .shop:hover{
-    background-color: #5a50e5;
-    box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 20px -7px;
-    transform: translateY(-5px);
-}
-
 /*       Footer               */
 footer{
     display: flex;
@@ -584,3 +431,5 @@ footer .bottom a{
 footer .bottom a:hover{
     color: #4f45e3;
 }
+
+
