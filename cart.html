@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Product</title>
+</head>
+<body>
+    <!--             header             -->
+    
+    <header>
+        <form action="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="" placeholder="Search">
+        </form>
+        <p><a href="">ahmed anis</a> </p>
+        <div class="head_right">
+            <a href=""><i class="fa-solid fa-user"></i></a>
+            <a href=""><i class="fa-regular fa-heart"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+    <!--             Navbar             -->
+    <nav>
+        <ul class="main_menu">
+            <li class="main_drop hov main_list"><a href="home.html">Home <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="drop_down_1">
+                    <li class="sub_list menu_one"><a href="">Menu One</a></li>
+                    <li class="sub_list"><a href="">Menu Two</a></li>
+                    <li class="sub_list"><a href="">Menu Three</a></li>
+                    <li class="submain_drop"><a href="">Sub Menu</a>
+                        <ul class="drop_down_2">
+                            <li class="sub_list menu_one"><a href="">Sub menu One</a></li>
+                            <li class="sub_list"><a href="">Sub menu Two</a></li>
+                            <li class="sub_list"><a href="">Sub menu Three</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="main_drop hov main_list"><a href="about.html">About <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="drop_down_1">
+                    <li class="sub_list menu_one"><a href="">Menu One</a></li>
+                    <li class="sub_list"><a href="">Menu Two</a></li>
+                    <li class="sub_list"><a href="">Menu Three</a></li>
+                </ul>
+            </li>
+            <li class="hov main_list"><a href="">Shop</a></li>
+            <li class="hov main_list"><a href="">Catalogue</a></li>
+            <li class="hov main_list"><a href="">New Arrivals</a></li>
+            <li class="hov main_list"><a href="">Contact</a></li>
+        </ul>
+    </nav>
+        <!--             Section About             -->
+
+    <section class="about">
+        <p><a href="">Home</a> / Cart</p>
+    </section>
+
+        <!--             Section table             -->
+    <section class="tab">
+        <table>
+            <thead>
+                <tr>
+                    <td class="image">Image</td>
+                    <td class="Product">Product</td>
+                    <td class="Price">Price</td>
+                    <td class="Quantity">Quantity</td>
+                    <td class="Total">Total</td>
+                    <td class="Remove">Remove</td>
+                </tr>
+            </thead>
+            <tr>
+                <td><img src="images/cloth_1.jpg" alt=""></td>
+                <td>Top Up T-Shirt</td>
+                <td>$49.00</td>
+                <td>
+                    <div class="qty">
+                        <button class="less">-</button>
+                        <input type="number" maxlength="3" name="" id="" min="0" max="100">
+                        <button class="max">+</button>
+                    </div>
+                </td>
+                <td>$49.00</td>
+                <td class="cancel"><a href="">X</a></td>
+            </tr>
+            <tr>
+                <td><img src="images/cloth_3.jpg" alt=""></td>
+                <td>Polo Shirt</td>
+                <td>$49.00</td>
+                <td>
+                    <div class="qty">
+                        <button class="less">-</button>
+                        <input type="number" maxlength="3" name="" id="" min="0" max="100">
+                        <button class="max">+</button>
+                    </div>
+                </td>
+                <td>$49.00</td>
+                <td class="cancel"><a href="">X</a></td>
+            </tr>
+        </table>
+    </section>
+    <!--             section 1            -->
+    <section class="sec_cart">
+        <div class="left">
+            <a href="">update cart</a>
+            <a href="">continue shopping</a>
+            <h4>Coupon</h4>
+            <p>Enter your coupon code if you have one</p>
+            <div class="coupon">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Coupon Code">
+                </form>
+                <a href="">apply coupon</a>
+            </div>
+        </div>
+        <div class="right">
+            <h4>cart totals</h4>
+            <div class="subtotal">
+                <p>subtotal</p>
+                <p>$230.00</p>
+            </div>
+            <div class="subtotal">
+                <p>total</p>
+                <p>$230.00</p>
+            </div>
+            <a href="checkout.html">proceed to checkout</a>
+        </div>
+    </section>
+        <!--             Footer            -->
+
+    <footer>
+        <div class="top">
+            <div class="left">
+                <p>Navigation</p>
+                <div class="list">
+                    <ul>
+                        <li><a href="">Sell online</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Shopping cart</a></li>
+                        <li><a href="">Store builder</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">mobile commerce</a></li>
+                        <li><a href="">dropshipping</a></li>
+                        <li><a href="">website development</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">point of sale</a></li>
+                        <li><a href="">hardware</a></li>
+                        <li><a href="">software</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right_l">
+                    <p>Promo</p>
+                    <a href=""><img src="images/hero_1.jpg" alt=""></a>
+                    <a class="r_l_1 r_l_11" href="">Finding Your Perfect Shoes</a>
+                    <a class="r_l_1" href="">Promo from nuary 15 __ 25,2013</a>
+                </div>
+                <div class="right_r">
+                    <p>Contact info</p>
+                    <span><i class="fa-solid fa-location-dot"></i>237 Gamal Abd El-Nasser street <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alexandria,Egypt</span>
+                    <span class="tel"><i class="fa-solid fa-phone"></i><a href="">+20 1010087321</a></span>
+                    <span><i class="fa-solid fa-envelope"></i>keyloggerpy2022@gmail.com</span>
+                    <form action="">
+                        <label for="email">Subscribe</label>
+                        <input type="email" name="" id="email" placeholder="Email">
+                        <a href="">SEND</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="bottom">Copyright ©2023 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i><a href="">Ahmed Anis</a></p>
+
+    </footer>
+
+
+
+
+
+</body>
+</html>
