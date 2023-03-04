@@ -98,8 +98,9 @@ header .head_right a i:hover{
 }
 /*           Menu drop styling             */
 .main_list{
+    height: 100%;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 .main_list.hov a{
     font-size: 15px;
@@ -115,10 +116,10 @@ header .head_right a i:hover{
     margin: 20px 0 20px 20px;
 }
 .drop_down_1{
-    top: 56px;
+    top: 63px;
 }
 .drop_down_2{
-    left: 190px;
+    left: 200px;
     top: 0;
 }
 .drop_down_1,
@@ -153,7 +154,7 @@ header .head_right a i:hover{
 }
 /*         section 1 shop        */
 .sec_1_shop{
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: center;
     margin: 70px auto;

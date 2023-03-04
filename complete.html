@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="complete.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Cart</title>
+    <title>Ahmed Anis-Order Completed</title>
 </head>
 <body>
+
     <!--             header             -->
     
     <header>
@@ -56,80 +57,21 @@
         <!--             Section About             -->
 
     <section class="about">
-        <p><a href="">Home</a> / Cart</p>
+        <div class="ab">
+            <p><a href="">Home</a> <span>/</span><a href="">Cart</a> / Check out</p>
+        </div>
+    </section>
+        <!--             Section Complete             -->
+    <section class="complete">
+        <img width="70px" src="images/confirm.png" alt="">
+        <h3>Thank You !</h3>
+        <p>Your order was successfuly completed.</p>
+        <a href="home.html">Back To Home</a>
     </section>
 
-        <!--             Section table             -->
-    <section class="tab">
-        <table>
-            <thead>
-                <tr>
-                    <td class="image">Image</td>
-                    <td class="Product">Product</td>
-                    <td class="Price">Price</td>
-                    <td class="Quantity">Quantity</td>
-                    <td class="Total">Total</td>
-                    <td class="Remove">Remove</td>
-                </tr>
-            </thead>
-            <tr>
-                <td><img src="images/cloth_1.jpg" alt=""></td>
-                <td>Top Up T-Shirt</td>
-                <td>$49.00</td>
-                <td>
-                    <div class="qty">
-                        <button class="less">-</button>
-                        <input type="number" maxlength="3" name="" id="" min="0" max="100">
-                        <button class="max">+</button>
-                    </div>
-                </td>
-                <td>$49.00</td>
-                <td class="cancel"><a href="">X</a></td>
-            </tr>
-            <tr>
-                <td><img src="images/cloth_3.jpg" alt=""></td>
-                <td>Polo Shirt</td>
-                <td>$49.00</td>
-                <td>
-                    <div class="qty">
-                        <button class="less">-</button>
-                        <input type="number" maxlength="3" name="" id="" min="0" max="100">
-                        <button class="max">+</button>
-                    </div>
-                </td>
-                <td>$49.00</td>
-                <td class="cancel"><a href="">X</a></td>
-            </tr>
-        </table>
-    </section>
-    <!--             section 1            -->
-    <section class="sec_cart">
-        <div class="left">
-            <a href="">update cart</a>
-            <a href="">continue shopping</a>
-            <h4>Coupon</h4>
-            <p>Enter your coupon code if you have one</p>
-            <div class="coupon">
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Coupon Code">
-                </form>
-                <a href="">apply coupon</a>
-            </div>
-        </div>
-        <div class="right">
-            <h4>cart totals</h4>
-            <div class="subtotal">
-                <p>subtotal</p>
-                <p>$230.00</p>
-            </div>
-            <div class="subtotal">
-                <p>total</p>
-                <p>$230.00</p>
-            </div>
-            <a href="checkout.html">proceed to checkout</a>
-        </div>
-    </section>
-        <!--             Footer            -->
+
+
+                <!--             Footer            -->
 
     <footer>
         <div class="top">
@@ -177,10 +119,5 @@
         <p class="bottom">Copyright ©2023 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i><a href="">Ahmed Anis</a></p>
 
     </footer>
-
-
-
-
-
 </body>
 </html>

@@ -98,9 +98,9 @@ header .head_right a i:hover{
 }
 /*           Menu drop styling             */
 .main_list{
-    height: 100%;
     margin: 10px;
     padding: 20px;
+    height: 100%;
 }
 .main_list.hov a{
     font-size: 15px;
@@ -136,124 +136,58 @@ header .head_right a i:hover{
 .sub_list:hover{
     background-color: #8c92a073;
 }
-  /*             Section About          */
+
+/*             Section About          */
+.about{
+    width: 100%;
+    background-color: #F8F9FA;
+    
+}
+.ab{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    /* border: 1px solid red; */
+}
 .about p{
     height: 59px;
-    padding-left: calc(30%/3);
-    background-color: #F8F9FA;
+    /* padding-left: 6%; */
     line-height: 59px;
 }
 .about p a{
     color: #7971ea;
     font-size: 18px;
     transition: 0.2s ease;
+    padding: 3px;
 }
 .about p a:hover{
     color: #3a2ee0;
 }
-
-/*             Section 1prod          */
-.sec_1ab{
-    width: 100%;
-    height: calc(100% - 59px);
+/*       Section Complete               */
+.complete{
+    height: 50vh;
+    margin-top: 50px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 0 auto;
-    border-bottom: 1px solid #8c92a07a;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(140, 146, 160, 0.5);
+    padding-bottom: 80px;
 }
-.sec_1ab img{
-    width: 35%;
-    border-radius: 5px;
-    margin-top: 70px;
-    margin-bottom: 120px;
+.complete h3{
+    font-size: 80px;
+    font-weight: 300;
 }
-.sec_1ab .text_ab{
-    width: 35%;
-    margin-top: 70px;
-    margin-bottom: 120px;
-    position: relative;
-}
-.sec_1ab .text_ab::after{
-    content: '';
-    width: 45px;
-    border-top: 2px solid #5a50e5;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.sec_1ab .text_ab h3{
-    font-size: 32px;
-    font-weight: 400;
-}
-.sec_1ab .text_ab p{
-    font-size: 16px;
+.complete p{
+    font-size: 20px;
     color: #8c92a0;
-    margin-bottom: 30px;
 }
-.sec_1ab .text_ab .price{
-    font-size: 24px;
-    color: #7971ea;
-}
-.sec_1ab .text_ab form{
-    margin-bottom: 25px;
-}
-.sec_1ab .text_ab form input,
-.sec_1ab .text_ab form label{
-    margin-right: 5px;
-}
-.sec_1ab .text_ab .qty{
-    margin-bottom: 30px;
-    position: relative;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
-}
-.sec_1ab .text_ab [type="number"]{
-    position: relative;
-    text-align: center;
-    width: 45px;
-    height: 30px;
-    left: -5px;
-    outline: none;
-    border-style: none;
-    border: 1px solid #25262a50;
-}
-.sec_1ab .text_ab .qty .less{
-    width: 25px;
-    height: 30px;
-    background-color: transparent;
-    border-style: none;
-    border-radius: 5px 0px 0px 5px;
-    border: 1px solid #25262a50;
-    transition: 0.3s linear;
-}
-.sec_1ab .text_ab .qty .max{
-    width: 25px;
-    height: 30px;
-    background-color: transparent;
-    border-style: none;
-    border: 1px solid #25262a50;
-    position: absolute;
-    left: 68px;
-    border-radius: 0px 5px 5px 0px;
-    transition: 0.3s linear;
-}
-.sec_1ab .text_ab .qty .max:hover,
-.sec_1ab .text_ab .qty .less:hover{
-    background-color: #5a50e5;
-    box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 20px -7px;
-    transform: translateY(-1px);
-    cursor: pointer;
-}
-
-.sec_1ab a{
-    display: block;
+.complete a{
+    display: inline-block;
     width: fit-content;
     padding: 10px 20px;
+    margin-top: 50px;
     background-color: #7971ea;
     color: white;
     font-size: 16px;
@@ -262,99 +196,25 @@ input[type=number]::-webkit-outer-spin-button{
     border-radius: 10px;
     transition: 0.3s linear;
 }
-.sec_1ab a:hover{
+.complete a:hover{
     background-color: #5a50e5;
     box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 20px -7px;
     transform: translateY(-3px);
 }
 
-/*       Section 4                */
-.sec_4{
-    background-color: #F8F9FA;
-    width: 100%;
-    /* height: 75vh; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sec_4 .text{
-    position: relative;
-    margin: 60px auto 60px;
-}
-.sec_4 .text::after{
-    content: '';
-    width: 45px;
-    border-top: 2px solid #5a50e5;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-.sec_4 .text p{
-    font-size: 32px;
-}
-.sec_4 .image_sec_4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sec_4 .image_sec_4 .card_sec_4{
-    background-color: white;
-    width: 25%;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sec_4 .image_sec_4 .card_sec_4 img{
-    width: 100%;
-}
-.sec_4 .card_sec_4 .title{
-    width: 100%;
-    margin: 30px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sec_4 .card_sec_4 .title a{
-    font-size: 20px;
-    color: #7971ea;
-    transition: 0.3s linear;
-}
-.sec_4 .card_sec_4 .title a:hover{
-    color: #3a2ee0;
-}
-.sec_4 .card_sec_4 .title p{
-    color: #8c92a0;
-    font-size: 16px;
-}
-.sec_4 .card_sec_4 .title span{
-    color: #7971ea;
-    font-size: 16px;
-    font-weight: 800;
-}
-.sec_4 .arrow{
-    font-size: 25px;
-    margin: 20px 15px 50px 15px;
-}
-.sec_4 .arrow i{
-    padding: 0 15px 0 15px;
-}
-
-
-
 /*       Footer               */
 footer{
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer .top{
     height: 330px;
     margin: 50px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 footer .top .left{
     width: 40%;
@@ -385,7 +245,7 @@ footer .top .list ul li a:hover{
     color: #7971ea;
 }
 footer .top .right{
-    width: 40%;
+    width: 50%;
     margin-left: 20px;
     display: flex;
 }
@@ -485,6 +345,7 @@ footer .bottom{
     color: #8c92a0;
     font-size: 16px;
     margin: 80px 0;
+    align-self: center;
 }
 footer .bottom a{
     color: #7971ea;
@@ -493,3 +354,22 @@ footer .bottom a{
 footer .bottom a:hover{
     color: #4f45e3;
 }
+
+/*         media Quyries          */
+@media (min-width:1024px) and (max-width:1366px){
+    footer{
+        width: 90%;
+    }
+    .ab{
+        width: 90%;
+    }
+}
+@media (min-width:1367px) and (max-width:1669px){
+    footer{
+        width: 80%;
+    }
+    .ab{
+        width: 80%;
+    }
+}
+

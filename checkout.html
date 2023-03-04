@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Check Out</title>
+</head>
+<body>
+
+    <!--             header             -->
+    
+    <header>
+        <form action="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="" placeholder="Search">
+        </form>
+        <p><a href="">ahmed anis</a> </p>
+        <div class="head_right">
+            <a href=""><i class="fa-solid fa-user"></i></a>
+            <a href=""><i class="fa-regular fa-heart"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+    <!--             Navbar             -->
+    <nav>
+        <ul class="main_menu">
+            <li class="main_drop hov main_list"><a href="home.html">Home <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="drop_down_1">
+                    <li class="sub_list menu_one"><a href="">Menu One</a></li>
+                    <li class="sub_list"><a href="">Menu Two</a></li>
+                    <li class="sub_list"><a href="">Menu Three</a></li>
+                    <li class="submain_drop"><a href="">Sub Menu</a>
+                        <ul class="drop_down_2">
+                            <li class="sub_list menu_one"><a href="">Sub menu One</a></li>
+                            <li class="sub_list"><a href="">Sub menu Two</a></li>
+                            <li class="sub_list"><a href="">Sub menu Three</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="main_drop hov main_list"><a href="about.html">About <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="drop_down_1">
+                    <li class="sub_list menu_one"><a href="">Menu One</a></li>
+                    <li class="sub_list"><a href="">Menu Two</a></li>
+                    <li class="sub_list"><a href="">Menu Three</a></li>
+                </ul>
+            </li>
+            <li class="hov main_list"><a href="shop.html">Shop</a></li>
+            <li class="hov main_list"><a href="">Catalogue</a></li>
+            <li class="hov main_list"><a href="">New Arrivals</a></li>
+            <li class="hov main_list"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        <!--             Section About             -->
+
+    <section class="about">
+        <div class="ab">
+            <p><a href="">Home</a> <span>/</span><a href="">Cart</a> / Check out</p>
+        </div>
+    </section>
+        <!--             Section cart             -->
+        <section class="sec_1cart">
+            <div class="top">
+                <p>Returning customer? <a href="">Click here</a> to login</p>
+            </div>
+            <div class="cart">
+                <div class="left">
+                    <p>Billing Details</p>
+                    <div class="billing">
+                        <form action="" class="country">
+                            <div>
+                                <label for="countrys">Country <span>*</span></label>
+                            </div>
+                            <input list="country" id="countrys" placeholder="Select a Country">
+                            <datalist id="country">
+                                <option value="Select a Country"></option>
+                                <option value="Egypt"></option>
+                                <option value="Kwait"></option>
+                                <option value="Marocc"></option>
+                                <option value="Ghana"></option>
+                                <option value="Tunisa"></option>
+                                <option value="Qatar"></option>
+                                <option value="Saudi Arabia"></option>
+                            </datalist>
+                        </form>
+                        <form action="" class="usern1">
+                            <div class="first">
+                                <div>
+                                    <label for="fname">First Name <span>*</span></label>
+                                </div>
+                                <input type="text" name="" id="fname">
+                            </div>
+                            <div class="last">
+                                <div>
+                                    <label for="lname">Last Name <span>*</span></label>
+                                </div>
+                                <input type="text" name="" id="lname">
+                            </div>
+                        </form>
+                        <form action="" class="company">
+                            <div>
+                                <label for="company">Company Name</label>
+                            </div>
+                            <input type="text" name="" id="company">
+                        </form>
+                        <form action="" class="address">
+                            <div>
+                                <label for="address">Address <span>*</span></label>
+                            </div>
+                            <input type="text" name="" id="address" placeholder="Street Address">
+                            <input type="text" name="" id="address" placeholder="Apartment,suite,unit etc.(optional)">
+                        </form>
+                        <div class="postal">
+                            <div class="state">
+                                <div>
+                                    <label for="state">State / Country <span>*</span></label>
+                                </div>
+                                <input type="text" name="" id="state">
+                            </div>
+                            <div class="zip">
+                                <div>
+                                    <label for="posta">Posta / Zip <span>*</span></label>
+                                </div>
+                                <input type="text" name="" id="posta">
+                            </div>
+                        </div>
+                        <div class="mail">
+                            <div class="eaddress">
+                                <div>
+                                    <label for="email">Email Address <span>*</span></label>
+                                </div>
+                                <input type="email" name="" id="email">
+                            </div>
+                            <div class="tel">
+                                <div>
+                                    <label for="pjone">Posta / Zip <span>*</span></label>
+                                </div>
+                                <input type="tel" name="" id="phone">
+                            </div>
+                        </div>
+                        <form action="" class="acco">
+                            <input type="checkbox" name="" id="account">
+                            <label for="account">Creat an account?</label>
+                        </form>
+                        <form action="" class="diff">
+                            <input type="checkbox" name="" id="diffadd">
+                            <label for="diffadd">Ship To A Different Address?</label>
+                        </form>
+                        <p class="order_note">Order Notes</p>
+                        <textarea name="" id="" cols="" rows="10" placeholder="Write your notes here..."></textarea>
+                        
+                    </div>
+                </div>
+                <div class="cart_right">
+                    <p class="one">Coupon Code</p>
+                    <div class="apply">
+                        <p>Enter your coupon code if you have one</p>
+                        <input type="text" name="" id="" placeholder="Coupon Code">
+                        <a href="">Apply</a>
+                    </div>
+                    <div class="order">
+                        <p class="one">Your Order</p>
+                        <div class="data">
+                            <div class="detail">
+                                <span>Product</span>
+                                <span>Total</span>
+                            </div>
+                            <div class="detail light">
+                                <span>Top Up T-Shirt X 1</span>
+                                <span>$250.00</span>
+                            </div>
+                            <div class="detail light">
+                                <span>Polo Shirt X 1</span>
+                                <span>$100.00</span>
+                            </div>
+                            <div class="detail light">
+                                <span>Cart subtotal</span>
+                                <span>$350.00</span>
+                            </div>
+                            <div class="detail">
+                                <span>Order Total</span>
+                                <span>$350.00</span>
+                            </div>
+                            <div class="payment">
+                                <a href="">Direct Bank Transfer</a>
+                                <a href="">Cheque Payment</a>
+                                <a href="">Paypal</a>
+                            </div> 
+                            <div class="place">
+                                <a href="complete.html">Place Order</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+                <!--             Footer            -->
+
+    <footer>
+        <div class="top">
+            <div class="left">
+                <p>Navigation</p>
+                <div class="list">
+                    <ul>
+                        <li><a href="">Sell online</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Shopping cart</a></li>
+                        <li><a href="">Store builder</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">mobile commerce</a></li>
+                        <li><a href="">dropshipping</a></li>
+                        <li><a href="">website development</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">point of sale</a></li>
+                        <li><a href="">hardware</a></li>
+                        <li><a href="">software</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right_l">
+                    <p>Promo</p>
+                    <a href=""><img src="images/hero_1.jpg" alt=""></a>
+                    <a class="r_l_1 r_l_11" href="">Finding Your Perfect Shoes</a>
+                    <a class="r_l_1" href="">Promo from nuary 15 __ 25,2013</a>
+                </div>
+                <div class="right_r">
+                    <p>Contact info</p>
+                    <span><i class="fa-solid fa-location-dot"></i>237 Gamal Abd El-Nasser street <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alexandria,Egypt</span>
+                    <span class="tel"><i class="fa-solid fa-phone"></i><a href="">+20 1010087321</a></span>
+                    <span><i class="fa-solid fa-envelope"></i>keyloggerpy2022@gmail.com</span>
+                    <form action="">
+                        <label for="email">Subscribe</label>
+                        <input type="email" name="" id="email" placeholder="Email">
+                        <a href="">SEND</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="bottom">Copyright ©2023 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i><a href="">Ahmed Anis</a></p>
+
+    </footer>
+</body>
+</html>
