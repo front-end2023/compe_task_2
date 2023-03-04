@@ -72,6 +72,27 @@ header .head_right a i{
 header .head_right a i:hover{
     color: #3d3f45;
 }
+.fa-cart-shopping{
+    position: relative;
+}
+.fa-cart-shopping::after{
+    content: '2';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #7971ea;
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    transition: 0.2s ease;
+}
+.fa-cart-shopping:hover::after{
+    transform: translateY(-2px);
+}
 /*               Navbar               */
 .main_menu{
     height: 65px;
