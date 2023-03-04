@@ -166,7 +166,7 @@ header .head_right a i:hover{
 }
 /*       Section Complete               */
 .complete{
-    height: 50vh;
+    height: 70vh;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
