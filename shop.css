@@ -332,6 +332,30 @@ header .head_right a i:hover{
     box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 20px -7px ;
     transform: translateY(-3px);
 }
+select{
+    display: inline-block;
+    outline: none;
+    border-style: none;
+    border-radius: 5px;
+    width: 123px;
+    height: 43px;
+    padding: 10px 20px;
+    background-color: #e6e7e9;
+    transition: 0.3s ease;
+}
+select:hover{
+    cursor: pointer;
+    background-color: #545b62;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 20px -7px ;
+    transform: translateY(-3px);
+    color: white;
+}
+select option{
+    background-color: white;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+}
 
 /*            shop Right  Middle      */
 .sec_1_shop .shop_right .right_midd .image_sec_4{
